@@ -1,22 +1,15 @@
-import React, { useEffect, useRef } from 'react';
-import './App.css';
-import Dragable from './Compontents/Dragable';
-import MainScreen from './Compontents/MainScreen';
-
-function App() {
-
-  const containerRef = useRef(null);
+import React, { memo, useEffect, useRef } from 'react'
+import "../App.css"
+function Dragable({children,zindex,onClick,id,containerRef}) {
+  console.log("render")
   const boxRef = useRef(null);
-
   const isClicked = useRef(false);
-
   const coords = useRef({
     startX: 0,
     startY: 0,
     lastX: 0,
     lastY: 0
   })
-
   useEffect(() => {
     if (!boxRef.current || !containerRef.current) return;
 
@@ -60,12 +53,38 @@ function App() {
 
     return cleanup;
   }, [])
-
   return (
-    <main>
-      <MainScreen/>
-    </main>
-  );
+    <div ref={boxRef} style={{
+      zIndex:zindex
+    }} className="box" onClick={()=>{
+      onClick(id)
+    }}>
+      <h1 style={{
+        position:'absolute',
+        top:-35,
+        fontSize:15,
+        right:8,
+        backgroundColor:'rgb(214, 118, 118)',
+        borderRadius:100,
+        color:'white',
+        width:'20px',
+        textAlign:'center',
+        fontWeight:'100',
+      }}>x</h1>
+      <h1 style={{
+        position:'absolute',
+        top:-35,
+        fontSize:15,
+        right:35,
+        backgroundColor:'rgb(118, 163, 214)',
+        borderRadius:100,
+        color:'white',
+        width:'20px',
+        textAlign:'center',
+        fontWeight:'100',
+      }}>[]</h1>
+         {children}   
+     </div>
+  )
 }
-
-export default App;
+export default memo(Dragable)
