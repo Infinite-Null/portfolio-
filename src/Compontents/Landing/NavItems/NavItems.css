@@ -1,0 +1,30 @@
+.EachNavItem{
+    color: aliceblue;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 1;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.EachNavItem::before{
+   content: ".";
+   position: absolute;
+   bottom: -35px;
+   font-size: 50px;
+   color: #8167a9;
+   transition: 0.5s;
+   transform: translateY(10px);
+   opacity: 0;
+}
+.EachNavItem:hover::before{
+    opacity: 1;
+    transition: 0.5s;
+    transform: translateY(0px);
+}
+.EachNavItem:hover{
+    color: #8167a9;
+}
