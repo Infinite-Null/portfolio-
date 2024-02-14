@@ -1,0 +1,26 @@
+.GithubTopMainConatiner{
+    height: 30px;
+    width: fit-content;
+    overflow-y: hidden;
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+}
+.GithubTopMainConatiner:hover .Github{
+    transform: translatey(-50px);
+    transition: 0.5s;
+    font-size: 10px;
+}
+.GithubTopMainConatiner:hover .InfiniteNull{
+    transform: translatey(-30px);
+    transition: 0.5s;
+    font-size: 15px;
+}
+.Github,.InfiniteNull{
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 15px;
+}
+.InfiniteNull{
+    font-size: 10px;
+}
