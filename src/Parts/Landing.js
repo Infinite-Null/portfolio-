@@ -2,6 +2,7 @@ import React from 'react'
 import Image from '../Compontents/Landing/Image'
 import NavItems from '../Compontents/Landing/NavItems/NavItems'
 import Leftdescription from '../Compontents/Landing/Leftdescription/Leftdescription'
+import Rightdescription from '../Compontents/Landing/Rightdescription/Rightdescription'
 
 export default function Landing() {
   return (
@@ -13,6 +14,7 @@ export default function Landing() {
         <Image/>
         <NavItems/>
         <Leftdescription/>
+        <Rightdescription/>
       </div>
   )
 }

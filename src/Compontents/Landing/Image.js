@@ -13,8 +13,8 @@ export default function Image() {
           zIndex:'1'
         }}>
           <img src={img} alt='' style={{
-            height:"50vw",
-            width:"50vw",
+            height:"56vw",
+            width:"56vw",
             objectFit:"cover",
           }}/> 
         </div>
