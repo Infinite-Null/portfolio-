@@ -9,7 +9,8 @@
     width: 100vw;
     background: rgb(0,0,0);
     flex-direction: column; 
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.671) 0%, rgba(31, 32, 41, 0.329) 100%); 
+    background: linear-gradient(0deg, rgb(20, 20, 20) 0%, rgba(31, 32, 41, 0.637) 100%); 
+    padding-bottom: 10px;
 }
 .ButtomQuote p{
     text-align: center;

@@ -8,6 +8,10 @@ function App() {
   return (
     <>
     <AnimatedScreen name={"Home"}><Landing/></AnimatedScreen>
+    <div style={{
+      height:'100vh',
+      backgroundColor:'rgba(20, 20, 20, 1.00)'
+    }}></div>
     </>
   );
 }
