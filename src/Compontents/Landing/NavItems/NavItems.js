@@ -7,6 +7,7 @@ export default function NavItems() {
     <SpaceBetween style={{
         poition:'absolute',
         zIndex:2,
+        paddingRight:"10px"
     }}>
         <GithubTop/>
         <div style={{

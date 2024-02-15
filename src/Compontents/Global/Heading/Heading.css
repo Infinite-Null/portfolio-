@@ -1,0 +1,7 @@
+.HeadingMainContainer p{
+    font-size: 15vw;
+}
+.HeadingMainContainer{
+    overflow: hidden;
+    border-bottom: 2px solid white;
+}

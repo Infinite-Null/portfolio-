@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Leftdescription.css"
-import {motion} from "framer-motion";
+import { motion } from "framer-motion"
 export default function Leftdescription() {
   return (
     <motion.div className='mainLeftdescription' initial={{
