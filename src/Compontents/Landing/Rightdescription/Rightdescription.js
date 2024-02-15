@@ -1,9 +1,17 @@
 import React from 'react'
 import './Rightdescription.css'
 import { Typewriter } from 'react-simple-typewriter'
+import {motion} from "framer-motion";
 export default function Rightdescription() {
   return (
-    <div className='mainRightdescription'>
+    <motion.div className='mainRightdescription' initial={{
+      y:100,
+      opacity:0
+      }} animate={{
+      y:0,
+      opacity:1,
+      transition:{delay:1,duration:0.5,ease: [0.9, 0, 0.24, 1]}
+      }} >
     <p>I am 👀</p>
     <span>
     <Typewriter
@@ -16,6 +24,6 @@ export default function Rightdescription() {
             delaySpeed={2000}
     /> 
     </span>   
-  </div>
+  </motion.div>
   )
 }

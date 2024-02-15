@@ -10,15 +10,17 @@
     flex-direction: column;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 10px;
+    cursor: pointer;
 }
 .GithubTopMainConatiner:hover .Github{
     transform: translatey(-50px);
     transition: 0.5s;
-    font-size: 20px;
+    font-size: 30px;
     opacity: 0;
 }
 .GithubTopMainConatiner:hover .InfiniteNull{
-    transform: translatey(-10px);
+    transform: translatey(-20px);
     transition: 0.5s;
     font-size: 30px;
     opacity: 1;
@@ -33,7 +35,7 @@
     transform: translatey(10px)
 }
 .InfiniteNull{
-    font-size: 10px;
+    font-size: 30px;
     opacity: 0;
 }
 .Github span,.InfiniteNull span{

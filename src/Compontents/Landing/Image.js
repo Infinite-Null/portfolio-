@@ -1,6 +1,5 @@
 import React from 'react'
 import img from "../../Images/20240215_004439.png"
-
 export default function Image() {
   return (
        <div style={{
