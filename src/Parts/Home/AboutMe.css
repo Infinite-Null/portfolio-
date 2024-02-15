@@ -1,4 +1,19 @@
 .AboutMemainContainer{
-    height: 100vh;
+    height: fit-content;
     background-color: rgba(20, 20, 20, 1.00);
+    overflow: hidden;
+    padding-top: 30px;
+}
+.AboutMeLeftAndImage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+.AboutMeLeftAndImage img{
+    height: 700px;
+    width: 700px;
+    object-fit: cover;
+    border-radius: 1000px;
+    box-shadow: 2px 2px 20px 0 rgba(255, 255, 255, 0.4);
 }
