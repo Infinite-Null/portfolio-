@@ -1,0 +1,28 @@
+.ButtomQuote{
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    width: 100vw;
+    background: rgb(0,0,0);
+    flex-direction: column; 
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.671) 0%, rgba(31, 32, 41, 0.329) 100%); 
+}
+.ButtomQuote p{
+    text-align: center;
+    width: 500px;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 80px;
+    font-weight: 500;
+}
+.ButtomQuoteLoading{
+    padding: 10px;
+}
+.ButtomQuoteLoading span{
+    padding-left: 30px;
+    font-size: 20px;
+}

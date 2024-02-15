@@ -1,6 +1,5 @@
-import React, { useEffect, useRef } from 'react';
 import './App.css';
-import img from "./Images/20240215_002941.png"
+import AnimatedScreen from './Layouts/AnimatedScreen';
 import Landing from './Parts/Landing';
 
 
@@ -8,7 +7,7 @@ function App() {
 
   return (
     <>
-    <Landing/>
+    <AnimatedScreen name={"Home"}><Landing/></AnimatedScreen>
     </>
   );
 }
