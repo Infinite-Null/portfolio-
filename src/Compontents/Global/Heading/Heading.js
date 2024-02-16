@@ -11,7 +11,7 @@ export default function Heading() {
         y:0,
         opacity:1,
         transition:{duration:0.5,ease: [0.9, 0, 0.24, 1]}
-      }}>About Me</motion.p>
+      }}>About <span>Me</span></motion.p>
       <motion.div className='HeadingHr' style={{
           height:'10px',
           backgroundColor:'white'

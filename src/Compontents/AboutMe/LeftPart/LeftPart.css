@@ -1,19 +1,38 @@
 .AboutMeLeftPartMainContainer{
     max-width: 50vw;
+    font-size: 25px;
 }
 .AboutMeLeftPartMainContainer button{
      height: 200px;
      width: 200px;
-     margin: 20px;
+     margin: 40px;
      border-radius: 100%;
      transition: 0.5s;
     outline: none;
     border: none;
     font-weight: 600;
+    cursor: pointer;
     font-size: 20px;
 }
 .AboutMeLeftPartMainContainer button:hover{
     background-color: #8167a9;
+    /*color: aliceblue;*/
+    transform: translateY(-10px);
+}
+.AboutMeLeftPartMainContainer button p{
+    transition: 0.5s;
+    transform: translateY(10px);
+}
+.AboutMeLeftPartMainContainer button div{
+    transition: 0.5s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+ .AboutMeLeftPartMainContainer button:hover p{
     color: aliceblue;
     transform: translateY(-10px);
+}
+.AboutMeLeftPartMainContainer button:hover div{
+    opacity: 1;
+    transform: translateY(-0px);
 }
