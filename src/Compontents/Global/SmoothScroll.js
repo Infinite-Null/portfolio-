@@ -1,11 +1,11 @@
 import {useEffect} from "react";
 import Scrollbar from 'smooth-scrollbar';
 export const SmoothScroll = () => {
-    const options = {
-        damping : 0.03,
-    }
 
     useEffect(() => {
+        const options = {
+            damping : 0.03,
+        }
 
         Scrollbar.init(document.body, options);
 

@@ -14,16 +14,30 @@ export const EachWork = ({showTop,image,showBottom,name,type}) => {
             }} whileInView={{
                 width: "90vw",
                 opacity: 1,
-                transition: {duration: 1, ease: [0.9, 0, 0.24, 1]}
+                transition: {duration: 0.5, ease: [0.9, 0, 0.24, 1]}
             }}/>}
             <div className={"EachWorkComponent"}>
                 <img src={image}  alt={""} className={"EachWorkComponentImage"}/>
-                <p className={"ProjectName"}>
+                <motion.p initial={{
+                    x:250,
+                    opacity:0
+                  }} whileInView={{
+                    x:0,
+                    opacity:1,
+                    transition:{duration:0.5,ease: [0.9, 0, 0.24, 1]}
+                  }} className={"ProjectName"}>
                     {name}
-                </p>
-                <p className={"Type"}>
+                </motion.p>
+                <motion.p initial={{
+                    x:-250,
+                    opacity:0
+                  }} whileInView={{
+                    x:0,
+                    opacity:1,
+                    transition:{duration:0.5,ease: [0.9, 0, 0.24, 1]}
+                  }} className={"Type"}>
                     {type}
-                </p>
+                </motion.p>
             </div>
             {showBottom && <motion.div className='HeadingHr' style={{
                 height: '2px',
@@ -35,7 +49,7 @@ export const EachWork = ({showTop,image,showBottom,name,type}) => {
             }} whileInView={{
                 width: "90vw",
                 opacity: 1,
-                transition: {duration: 1, ease: [0.9, 0, 0.24, 1]}
+                transition: {duration: 0.8, ease: [0.9, 0, 0.24, 1]}
             }}/>}
         </div>
     )
