@@ -4,7 +4,7 @@ import {motion} from "framer-motion";
 import React from "react";
 import {EachNavItem} from "../../Compontents/Landing/NavItems/NavItems";
 
-export const Skills = () => {
+export const Work = () => {
     return (
         <div style={{
             backgroundColor: 'rgb(37,36,36)',
