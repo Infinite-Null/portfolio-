@@ -1,0 +1,49 @@
+.EachWorkComponent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    cursor: pointer;
+}
+.ProjectName{
+    margin-left: 5%;
+    font-size: 6vw;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Type{
+    margin-right: 5%;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 20px;
+}
+.EachWorkMainComponent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.EachWorkComponentImage{
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(20px);
+}
+.EachWorkComponent:hover .EachWorkComponentImage{
+    opacity: 1;
+    transition: 0.5s;
+    transform: translateY(0px);
+}
+.EachWorkComponent:hover .ProjectName{
+    margin-left: 7%;
+    transition: 0.5s;
+}
+.EachWorkComponent:hover .Type{
+    margin-right: 7%;
+    transition: 0.5s;
+
+}

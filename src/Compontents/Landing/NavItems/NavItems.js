@@ -25,7 +25,7 @@ export default function NavItems() {
   )
 }
 
-function EachNavItem({name}){
+export function EachNavItem({name}){
     return <p className='EachNavItem'>
         {name}
     </p>
