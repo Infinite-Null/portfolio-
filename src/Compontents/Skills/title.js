@@ -13,8 +13,8 @@ export const Title = ({title, setVisible, id}) => {
 
     return (
         <motion.p ref={ref} className={classNames(
-            "text-5xl transition-colors py-16 font-bold",
-            isInView?"text-[#8167a9]":"text-gray-600"
+            "text-4xl transition-colors py-24 font-bold",
+            isInView?"text-[#8167a9]":"text-gray-800"
         )}>{title}</motion.p>
     )
 }

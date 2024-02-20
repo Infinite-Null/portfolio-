@@ -7,44 +7,28 @@ import "./Work.css"
 export const Work = () => {
     return (
         <div style={{
-            backgroundColor: 'rgb(37,36,36)',
-            paddingBottom:"30px"
+            backgroundColor: 'rgb(30,30,35)',
+            paddingBottom: "30px",
+            position:"relative"
         }}>
             <SkillsHeading/>
-            <motion.div className='HeadingHr' style={{
-                height: '5px',
-                backgroundColor: 'white',
-                borderRadius: "20px",
-                marginBottom: "20px"
-            }} initial={{
-                width: 0,
-                opacity: 0
+            <EachWork name={"Out of Kind"} showBottom={true} type={"MERN Stack"}
+                      image={"https://cdn.dribbble.com/users/6109291/screenshots/16411711/media/945b7e5f283b07b54d9fee03de1d7cc2.png?resize=400x300&vertical=center"}/>
+            <EachWork name={"Out of Kind"} showBottom={true} type={"MERN Stack"}
+                      image={"https://cdn.dribbble.com/users/6109291/screenshots/16411711/media/945b7e5f283b07b54d9fee03de1d7cc2.png?resize=400x300&vertical=center"}/>
+            <EachWork name={"Out of Kind"} showBottom={true} type={"MERN Stack"}
+                      image={"https://cdn.dribbble.com/users/6109291/screenshots/16411711/media/945b7e5f283b07b54d9fee03de1d7cc2.png?resize=400x300&vertical=center"}/>
+            <motion.button className={"ViewAllButton"} initial={{
+                y: 60,
             }} whileInView={{
-                width: "100vw",
-                opacity: 1,
-                transition: {duration: 1, ease: [0.9, 0, 0.24, 1]}
-            }}/>
-            <EachWork name={"Out of Kind"} showBottom={true} type={"MERN Stack"}
-                      image={"https://cdn.dribbble.com/users/6109291/screenshots/16411711/media/945b7e5f283b07b54d9fee03de1d7cc2.png?resize=400x300&vertical=center"}/>
-            <EachWork name={"Out of Kind"} showBottom={true} type={"MERN Stack"}
-                      image={"https://cdn.dribbble.com/users/6109291/screenshots/16411711/media/945b7e5f283b07b54d9fee03de1d7cc2.png?resize=400x300&vertical=center"}/>
-            <EachWork name={"Out of Kind"} showBottom={true} type={"MERN Stack"}
-                      image={"https://cdn.dribbble.com/users/6109291/screenshots/16411711/media/945b7e5f283b07b54d9fee03de1d7cc2.png?resize=400x300&vertical=center"}/>
-            {/*<div style={{*/}
-            {/*    alignItems:"center",*/}
-            {/*    justifyContent:'center',*/}
-            {/*    display:"flex"*/}
-            {/*}}>*/}
-                <motion.button className={"ViewAllButton"} initial={{
-                    y: 60,
-                }} whileInView={{
-                    y: 0,
-                    transition: {delay: 0, ease: [0.9, 0, 0.24, 1]}
-                }}>
-                    <p>View All →</p>
-                    <div>🧰</div>
-                </motion.button>
-            {/*</div>*/}
+                y: 0,
+                transition: {delay: 0, ease: [0.9, 0, 0.24, 1]}
+            }}>
+                <p>View All →</p>
+                <div>🧰</div>
+            </motion.button>
+            <div className={"h-20"}></div>
+            <div className='BottomWork'/>
         </div>
     )
 }

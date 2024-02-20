@@ -33,3 +33,10 @@
     opacity: 1;
     transform: translateY(-0px);
 }
+.BottomWork{
+    background: linear-gradient(0deg, rgba(17,24,39,255) 0%, rgb(30,30,35) 100%);
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+}

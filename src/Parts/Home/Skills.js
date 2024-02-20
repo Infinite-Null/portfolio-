@@ -10,32 +10,32 @@ export const Skills = () => {
 
     const features = [
         {
-            title: "Use your calendar as a todo list",
+            title: "Proficient in MongoDB for flexible and scalable data management.",
             id: "todo-list",
             cards:MongoDB
         },
         {
-            title: "Color your calendar to organize",
+            title: "Skilled in ExpressJS for efficient server-side web application development.",
             id: "colors",
             cards:Express
         },
         {
-            title: "Instantly know if someone is available",
+            title: "Proficient in ReactJS for dynamic and user friendly web interfaces.",
             id: "availability",
             cards:React
         },
         {
-            title: "Track what you listened to when",
+            title: "Skilled in Node.js for scalable and efficient backend development.",
             id: "music",
             cards:NodeJs
         },
         {
-            title: "Send scheduling links guests love",
+            title: "Skilled in React Native for cross platform apps.",
             id: "scheduling-links",
             cards:ReactNative
         },
         {
-            title: "Always know what your team is up to",
+            title: "Proficient in Flutter for building sleek mobile app.",
             id: "team",
             cards:Flutter
         },
