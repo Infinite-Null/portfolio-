@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <SmoothScroll/>
+      {/*<SmoothScroll/>*/}
     <AnimatedScreen name={"Home"}><Home/></AnimatedScreen>
     </>
   );
