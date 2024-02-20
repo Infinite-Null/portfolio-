@@ -1,0 +1,108 @@
+.FirstAboutMeLine{
+   color:#8167a9;
+}
+.SecondAboutMeLine{
+     color: rgb(53, 53, 53);
+ }
+
+.AboutmainContainer{
+    height: fit-content;
+    background-color: rgba(20, 20, 20, 1.00);
+    overflow: hidden;
+    padding-top: 30px;
+    position: relative;
+    padding-bottom: 100px;
+}
+.AboutmainContainer p{
+    font-size: 5.5vw;
+    font-weight: 700;
+    line-height: 120px;
+}
+.AboutMoreButton{
+    height: 300px;
+    width: 300px;
+    margin: 40px;
+    border-radius: 100%;
+    transition: 0.5s;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 20px;
+}
+.AboutMoreButton:hover{
+    background-color: #8167a9;
+    /*color: aliceblue;*/
+    transform: translateY(-10px);
+}
+.AboutMoreButton p{
+    transition: 0.5s;
+    transform: translateY(10px);
+    font-size: 20px;
+}
+.AboutMoreButton div{
+    transition: 0.5s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.AboutMoreButton:hover p{
+    color: aliceblue;
+    transform: translateY(-10px);
+}
+.AboutMoreButton:hover div{
+    opacity: 1;
+    transform: translateY(-0px);
+}
+.AboutImageContainer{
+    position: absolute;
+    right: -250px;
+    top: -100px;
+    z-index: 100;
+}
+.AboutMainImage{
+    object-fit: cover;
+    height: 1200px;
+    width: 1200px;
+    position: relative;
+    z-index: 1;
+}
+.AboutImage2,.AboutImage1{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+}
+.AboutImage1{
+    left: 200px;
+    bottom: 400px;
+    z-index: 20;
+    animation: DownUp 5s linear infinite;
+}
+.AboutImage2{
+    left:0px;
+    bottom: 400px;
+    animation: MoveUpDown 5s linear infinite;
+}
+.BottomAbout{
+    background: linear-gradient(0deg, rgb(37,36,36) 0%, rgba(20,20,20, 0.037) 100%);
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    z-index: 200;
+}
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+}
+@keyframes DownUp {
+    0%, 100% {
+        transform: translateY(-25px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+}

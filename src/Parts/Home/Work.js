@@ -30,8 +30,6 @@ export const Work = () => {
                       image={"https://cdn.dribbble.com/users/6109291/screenshots/16411711/media/945b7e5f283b07b54d9fee03de1d7cc2.png?resize=400x300&vertical=center"}/>
             <EachWork name={"Out of Kind"} showBottom={true} type={"MERN Stack"}
                       image={"https://cdn.dribbble.com/users/6109291/screenshots/16411711/media/945b7e5f283b07b54d9fee03de1d7cc2.png?resize=400x300&vertical=center"}/>
-            <EachWork name={"Out of Kind"} showBottom={true} type={"MERN Stack"}
-                      image={"https://cdn.dribbble.com/users/6109291/screenshots/16411711/media/945b7e5f283b07b54d9fee03de1d7cc2.png?resize=400x300&vertical=center"}/>
             {/*<div style={{*/}
             {/*    alignItems:"center",*/}
             {/*    justifyContent:'center',*/}

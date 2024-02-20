@@ -4,7 +4,7 @@ import LeftPart from '../../Compontents/AboutMe/LeftPart/LeftPart'
 import Heading from '../../Compontents/Global/Heading/Heading'
 import Image from "../../Images/coding-3d-render-icon-illustration-png.png"
 import Image1 from "../../Images/534621.png"
-import Image2 from "../../Images/20240214_163943_yellow.PORTRAIT.jpg"
+import Image2 from "../../Images/20240215_004439.png"
 import {motion} from "framer-motion";
 
 export default function AboutMe() {

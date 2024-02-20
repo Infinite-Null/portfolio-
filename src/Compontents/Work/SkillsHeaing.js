@@ -5,7 +5,7 @@ export default function SkillsHeading() {
     return (
         <div className='HeadingMainContainer'>
             <motion.p initial={{
-                y:250,
+                y:100,
                 opacity:0
             }} whileInView={{
                 y:0,
