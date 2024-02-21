@@ -1,6 +1,7 @@
 import {Title} from "../../Compontents/Skills/title";
 import {Express, Flutter, MongoDB, NodeJs, React, ReactNative} from "../../Compontents/Skills/card";
-import {useEffect, useState} from "react";
+import {useState} from "react";
+import "./Skills.css"
 
 export const Skills = () => {
     const [visible,setvisible] = useState("")
@@ -41,7 +42,7 @@ export const Skills = () => {
         },
     ];
     return (
-        <>
+        <div className={'relative'}>
             {/*<div className={"bg-gray-500 h-[500px]"}></div>*/}
             <div className={"mx-auto max-w-6xl px-4 bg-gray-900"}>
                 <div className={"flex w-full items-start gap-20"}>
@@ -55,11 +56,13 @@ export const Skills = () => {
                     </div>
                     <div className={"sticky top-0 flex h-screen w-full items-center"}>
                         <div className={"w-full aspect-square bg-gray-600 rounded-2xl relative"}>
-                            {features.map((e)=><e.cards key={e.id} visible={visible} id={e.id}/>)}
+                            {features.map((e) => <e.cards key={e.id} visible={visible} id={e.id}/>)}
                         </div>
                     </div>
                 </div>
+                <div className={"h-20"}></div>
             </div>
-        </>
+            <div className='BottomSkills'/>
+        </div>
     )
 }

@@ -4,6 +4,7 @@ import AboutMe from '../Parts/Home/AboutMe'
 import {Work} from "../Parts/Home/Work";
 import {About} from "../Parts/Home/About";
 import {Skills} from "../Parts/Home/Skills";
+import {Footer} from "../Parts/Home/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <About/>
       <Work/>
       <Skills/>
+        <Footer/>
     </>
   )
 }

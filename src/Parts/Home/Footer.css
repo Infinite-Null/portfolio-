@@ -1,0 +1,52 @@
+.mainFooterContainer{
+    background-color: #1c1d20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 10% 150px;
+}
+.getInTouchButton{
+    width: 300px;
+    height: 300px;
+    color: #1c1d20;
+    margin: 40px;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 90px;
+    top: -190px;
+    background-color: white;
+    box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.76);
+}
+
+.FooterImage{
+    height: 100px;
+    width: 100px;
+    display: inline;
+    background-color: #a97967;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.EachFooterContact{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #8167a9;
+}
+
+.EachSocialFooter{
+    font-size: 17px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    padding: 5px;
+}
+.EachSocialFooter:hover{
+    transform: translateY(-5px);
+    border-bottom: 1px solid white;
+}
