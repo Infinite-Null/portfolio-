@@ -62,7 +62,7 @@
 .AboutMainImage{
     object-fit: cover;
     height: 1200px;
-    width: 1200px;
+    width: 1000px;
     position: relative;
     z-index: 1;
 }
