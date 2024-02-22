@@ -20,3 +20,8 @@
 .mainRightdescription span{
     color: #8167a9;
 }
+@media screen and (max-width:1370px) {
+    .mainRightdescription{
+        display: none;
+    }
+}

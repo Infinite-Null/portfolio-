@@ -1,0 +1,42 @@
+.MainLandingImage{
+    position: absolute;
+    bottom:0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.ImageLanding{
+    width: 56vw;
+    height: 56vw;
+    object-fit: cover;
+}
+@media screen and (max-width:1370px) {
+    .MainLandingImage{
+        width: 100vw;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .ImageLanding{
+        width: 900px;
+        height: 800px;
+        object-fit: fill;
+        position: absolute;
+        right: -150px;
+    }
+}
+@media screen and (max-width:882px) {
+    .MainLandingImage{
+        width: 100vw;
+        position: absolute;
+    }
+    .ImageLanding{
+        width: 80vh;
+        height: 80vh;
+        object-fit: cover;
+        position: absolute;
+        right: 0px;
+    }
+}

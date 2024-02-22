@@ -29,3 +29,8 @@
 .EachNavItem:hover{
     color: #8167a9;
 }
+@media screen and (max-width:882px) {
+    .EachNavItem{
+        font-size: 4vw;
+    }
+}

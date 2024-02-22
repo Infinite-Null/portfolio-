@@ -22,7 +22,6 @@
 .GithubTopMainConatiner:hover .InfiniteNull{
     transform: translatey(-20px);
     transition: 0.5s;
-    font-size: 30px;
     opacity: 1;
 }
 .Github,.InfiniteNull{
@@ -40,4 +39,13 @@
 }
 .Github span,.InfiniteNull span{
     color: aliceblue;
+}
+@media screen and (max-width:882px) {
+    .Github,.InfiniteNull{
+        font-size: 4vw;
+    }
+    .GithubTopMainConatiner{
+        overflow: hidden;
+        padding-top: 5px;
+    }
 }
