@@ -6,10 +6,11 @@ import NodeLogo from "../../Images/node.png"
 import ReactNativeLogo from "../../Images/reactNative.png"
 import FlutterLogo from "../../Images/flutter_logo.png"
 
+
 const Cards = ({gradient, children, id, visible}) => {
     console.log(visible)
     return (
-        <div className={classNames("absolute inset-0 bg-red-300 h-full w-full rounded-2xl bg-gradient-to-br transition-opacity flex items-center justify-center",
+        <div  className={classNames("absolute inset-0 bg-red-300 h-full w-full rounded-2xl bg-gradient-to-br transition-opacity flex items-center justify-center",
             gradient,
             visible===id?"opacity-1":"opacity-0"
             )}>{children}</div>
