@@ -12,7 +12,8 @@ export const Footer = () => {
                 y:0,
                 opacity: 1,
                 transition: {duration: 0.8, ease: [0.9, 0, 0.24, 1]}
-            }}  className={"text-5xl"}><img alt={"ankit"} src={Image} className={"FooterImage"}/>Let's Work<br/>
+            }}  className={"ConnectText"}><img alt={"ankit"} src={Image} className={"FooterImage"}/>
+                Let's Work<br/>
                 <motion.span initial={{
                 y:400,
                 opacity: 0
@@ -42,7 +43,7 @@ export const Footer = () => {
                     transition: {delay:0.75,duration: 0.5, ease: [0.9, 0, 0.24, 1]}
                 }}  className={"getInTouchButton"}>Get in touch</motion.button>
             </motion.div>
-            <div className={"flex mt-3 gap-2"}>
+            <div className={"detailsContainer"}>
                 <EachContactItem data={"+91 7478856289"} delay={0}/>
                 <EachContactItem data={"ankit.kum.sha9933@gmail.com"} delay={0.1}/>
             </div>
@@ -55,7 +56,7 @@ export const Footer = () => {
                     y:0,
                     transition: {delay:0.5,duration: 0.5, ease: [0.9, 0, 0.24, 1]}
                 }}  className={"text-gray-500 mb-2 font-bold"}>Socials</motion.h6>
-                <div className={"flex gap-4"}>
+                <div className={"flex gap-4 flex-wrap"}>
                    <EachSocial href={"#"} name={"Github"} delay={0.45}/>
                     <EachSocial href={"#"} name={"LinkedIN"} delay={0.55}/>
                     <EachSocial href={"#"} name={"Instagram"} delay={0.65}/>
