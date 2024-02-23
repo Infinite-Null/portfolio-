@@ -6,3 +6,8 @@
 .HeadingMainContainer p span{
     color: #8167a9;
 }
+@media screen and (max-width:1404px) {
+    .HeadingMainContainer p{
+        font-size: 17vw;
+    }
+}
