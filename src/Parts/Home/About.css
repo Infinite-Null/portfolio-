@@ -29,6 +29,7 @@
     font-weight: 600;
     cursor: pointer;
     font-size: 20px;
+    line-height: 10px;
 }
 .AboutMoreButton:hover{
     background-color: #8167a9;
@@ -39,6 +40,7 @@
     transition: 0.5s;
     transform: translateY(10px);
     font-size: 20px;
+    line-height: 20px;
 }
 .AboutMoreButton div{
     transition: 0.5s;
@@ -104,5 +106,53 @@
     }
     50% {
         transform: translateY(0px);
+    }
+}
+@media screen and (max-width:1404px) {
+    .AboutMainImage{
+        object-fit: cover;
+        height: 100vh;
+        width: 70vw;
+        top: 200px;
+    }
+    .AboutImage2,.AboutImage1{
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        bottom: -0;
+    }
+    .AboutmainContainer p{
+        font-size: 10vw;
+        font-weight: 700;
+        line-height: 100%;
+    }
+    .AboutMoreButton{
+        height: 200px;
+        width: 200px;
+        margin: 40px;
+        border-radius: 100%;
+    }
+    .AboutMoreButton p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:768px) {
+    .AboutMainImage{
+        object-fit: cover;
+        height: 100vh;
+        width: 100vw;
+        top: 200px;
+        right: -10%;
+    }
+    .AboutImage2,.AboutImage1{
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        bottom: -0;
+    }
+}
+@media screen and (max-width:606px){
+    .AboutMainImage,.AboutImage2,.AboutImage1{
+       display: none;
     }
 }
